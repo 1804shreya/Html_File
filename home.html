@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5c6d09dda0.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        nav ul{
+            list-style-type: none;
+            padding: auto;
+            background-color: aqua;
+            height: 50px;
+        }
+        li{
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+        p{
+            padding: auto;
+            background-color: aquamarine;
+        }
+        h1{
+            text-align: center;
+        }
+        img{
+            width: 50%;
+            height: 400px;
+        }
+        video
+            {
+            width: 50%;
+            height: 460px;
+            margin-top: -60px;
+            
+        }
+        .A {
+            align-items: center;
+            float: left;
+        }
+        .A img{
+            float: left;
+        }
+        article{
+            padding: 80px;
+            background-color: blueviolet;
+            width: 60%;
+
+        }
+        section{
+            display:-webkit-flex;
+        }
+        
+        aside{
+            padding: 5%;
+            background-color: blanchedalmond;
+            width: 50%;
+            float: right;
+            
+        }
+        form{
+            
+            padding: auto;
+            background-color: darkkhaki;
+            text-align:justify;
+            margin-left: -2px;
+            margin-right: 600px;
+            border: 1px solid;
+        }
+        #child{
+            display: none;
+        }
+        #parent:hover #child{
+            display: block;
+            position: absolute;
+            margin-top: -50%;
+
+        }
+        table, td {
+            border: 1px solid black;
+            background-color: blanchedalmond;
+        }
+        table, th{
+            border: 2px double black;
+            background-color: rgb(238, 211, 130);
+        }
+        footer {
+            background-color: #b2e8e5;
+            color: #0e0d0d;
+            padding: 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+
+        .column {
+            flex-basis: 20%;
+            margin-bottom: 20px;
+    
+        }
+        .column li{
+            list-style: none;
+            margin-left: -40px;
+        }
+        .search-input {
+            width: 70%;
+            padding: 5px;
+        }
+        .circle {
+            width: 40px;
+            height: 40px;
+            background-color: #04AA6D; 
+            border-radius: 25%; 
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(10, 10, 10); 
+            font-size: 20px;}
+        .icons1 {
+
+            margin-right: 10px;
+            display: inline;
+        }
+        .icons1 a {
+            color: rgb(9, 9, 9);
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <marquee >Good Morning</marquee>
+    <nav class="nav">
+        <ul >
+            <li class="H">Home </li>
+            <li class="A">About</li>
+            <li class="C">Contact</li>
+        </ul>
+    </nav>   
+    
+    <h1>Home</h1>
+    <p><i>Lorem ipsum</i>, dolor sit amet consectetur adipisicing elit. Aspernatur rerum commodi reiciendis numquam. Tempore aut quam, facilis adipisci obcaecati temporibus, fugit laudantium ab at a, id architecto praesentium vero dicta!</p>
+    <span><b>Lorem ipsum</b> dolor sit amet consectetur adipisicing elit. Aliquam ratione, pariatur error dolores inventore in mollitia eum iste fuga maxime.</span>
+    <br><a href="https://www.google.com/" target="_blank">Link</a><br>
+    <div class="A">
+    <a href="https://www.google.com/" target="_blank"><img src="imgTag.png"></a>
+    <video controls><source src="videos.mp4"></video>
+</div>
+<hr>
+<section >
+<article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, sunt. Optio officiis repellat reprehenderit cumque quisquam, provident mollitia aliquid assumenda culpa, dicta facilis veritatis quibusdam!</article>
+
+
+     <aside>     Lorem ipsum dolor sit 
+        amet consectetur, adi
+        pisicing elit. Ducimus </aside>
+    </section>
+     <span id="parent">
+
+     <button type="button">Form</button>
+     
+    
+    <span id="child">
+     <form>
+        <label>First Name</label>
+        <input type="text" value="Name" maxlength="50">(Max 50 Characters allowed)
+        <br><br>
+        <label>Last name</label>
+        <input type="text" value="Last name" maxlength="50">(Max 50 Characters allowed)
+        <br><br>
+        <label> Email</label>
+        <input type="email" value="Email" >
+        <br><br>
+        <label>Mobile</label>
+        <input type="number" value="Mobile" maxlength="10">(Max 10 Characters allowed)
+        <br><br>
+        <label>Gender</label>
+        <input type="radio" value="a">Male
+        <input type="radio" value="a">Female<br><br>
+        <label>Date of Birth</label>
+        <label for="day">Day:</label>
+        <input type="date">
+        <br><br>
+        
+        <label>Address</label>
+        <textarea>Address </textarea>
+        <br><br>
+        <label>City</label>
+        <input type="text" value="City" maxlength="50">(Max 50 Characters allowed)
+        <br><br>
+        <label>Pin Code</label>
+        <input type="number"  value="Pin code" maxlength="6">(Max 6 Characters allowed)
+        <br><br>
+        <label>State</label>
+        <input type="text" value="State" maxlength="50">(Max 50 Characters allowed)
+        <br><br>
+        <label>Country</label>
+        <input type="Country" value="Country">
+        <br><br>
+        <label>Hobbies</label>
+        <input type="checkbox">Drawing
+        <input type="checkbox">Singing
+        <input type="checkbox">Dancing
+        <input type="checkbox">Sketching
+        <input type="checkbox">Others
+        <input type="text" value="Ex:Teaching" maxlength="50">(Max 50 Characters allowed)<br><br>
+        <label>Qualification</label><br>
+        <input type="checkbox" >High School<br>
+        <input type="checkbox">Higher Secondary<br>
+        <input type="checkbox">Graduation<br>
+        <input type="checkbox">Post Graduation<br>
+        <input type="checkbox">Phd<br><br>
+        <label>Courses Applied For </label>
+        <input type="checkbox">BCA
+        <input type="checkbox">B.Com
+        <input type="checkbox">B.Sc
+        <input type="checkbox">BA
+        <input type="checkbox">MCA
+        <input type="checkbox">M.Com
+        <input type="checkbox">M.Sc
+        <input type="checkbox">MA<br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    </span>
+     </span>
+     <table style="width:100%">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th> 
+          <th>Age</th>
+          <th>Department</th>
+        </tr>
+        <tr>
+          <td>Ram</td>
+          <td>Lal</td>
+          <td>22</td>
+          <td>CSE</td>
+        </tr>
+        <tr>
+          <td>Hari</td>
+          <td>Singh</td>
+          <td>21</td>
+          <td>IT</td>
+        </tr>
+        <tr>
+          <td>Krishna</td>
+          <td>Das</td>
+          <td>22</td>
+          <td>ETC</td>
+        </tr>
+      </table>
+      <footer style="margin-top: 1%;">
+        <div class="footer-content">
+            
+            <div class="column">
+                <h2>XYZ Technology</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat omnis, modi sint adipisci illum reprehenderit id, hic ut nemo possimus, ducimus corporis animi enim incidunt.</p>
+            </div>
+            
+            <div class="column">
+                <h2>Our Services</h2>
+                <ul>
+                    <li>Mobile Application Design</li>
+                    <li>Web Application Design</li>
+                    <li>Web Design</li>
+                    <li>Web User Interface Design</li>
+                    <li>Web UX Design and Research</li>
+                    <li>Theame Development Design</li>
+                </ul>
+            </div>
+           
+            <div class="column">
+                <h2>Head Office</h2>
+                <address>1/2,XYZ Bengaluru
+                    Karnataka-560037,
+                    Phone: +91 9999999999
+                    Email: xyz@gmail.com
+                      <br>Office Time: 10AM - 6PM
+                </address>
+            </div>
+            
+            
+            <div >
+                <h2>Subsribe Us</h2>
+                <div class="search-column">
+                 
+                <input type="text" class="search-input" placeholder="Enter your email">
+                <div class="circle">
+                    
+                    <div class="icons1"><a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><i class="fa-solid fa-paper-plane"></i></a></div>
+                </div>
+                
+                
+                     
+                </div>
+                <br>
+                <div class="circle">
+                    
+                    <div class="icons1"><a href="https://www.facebook.com/login/"><i class="fa-brands fa-square-facebook"></i></a></div>
+                </div>
+                    <div class="circle"> 
+                    <div class="icons1"><a href="https://www.twitter.com/login/"><i class="fa-brands fa-square-twitter"></i></a></div>
+                    </div>
+                    <div class="circle">
+                    <div class="icons1"><a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a></div>
+                    </div>
+                    <div class="circle">
+                    <div class="icons1"><a href="https://www.linkedin.com/login/"><i class="fa-brands fa-linkedin"></i></a></div>
+                    </div>
+                
+                
+            </div>
+            
+        </div>
+    </footer>
+    
+
+ 
+    
+
+    
+    
+</body>
+</html>
