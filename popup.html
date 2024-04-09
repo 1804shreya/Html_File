@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="popup.css">
+    
+</head>
+<body>
+    <button id="showPopupBtn">Show Popup</button>
+    <div class="popup" id="popup">
+
+    <div class="page">
+            
+    <section class="sale">
+        
+            <div class="offer">
+                <h1 >SPRING SALE</h1>
+
+            <hr>
+            <div class="for">
+            <h1>40% </h1>
+            <h1>OFF</h1>
+        </div>
+            <hr>
+
+            </div>
+            <div class="mail">
+                
+            <form>
+                <div class="detail">
+                    <div class="details">
+                        <h3>
+                            ENTER EMAIL BELOW TO UNLOCK
+                        </h3>
+                    </div>
+                    
+                    <div class="details">                    
+                        <input class="type" type="email" placeholder="enter email address"><br>
+                    </div>
+                    <div class="check">
+                    <input type="checkbox"> Yes, I'd like to receive news and special offers.<br>
+                    </div>
+                    <div class="details">
+                    <button class="button">GET MY 40% OFF</button>
+                    </div>
+                    <br>
+                    <div class="details">
+                    <h3 class="no">NO Thanks</h3>
+                    </div>
+            
+
+                </div>
+
+            </form>
+        </div>
+    </section>
+    </div>
+    </div>
+    <script>document.addEventListener("DOMContentLoaded", function() {
+        var showPopupBtn = document.getElementById("showPopupBtn");
+        var popup = document.getElementById("popup");
+        
+        showPopupBtn.addEventListener("click", function() {
+            popup.classList.toggle("show");
+        });
+    });
+    
+    
+    
+    </script>
+    
+    
+
+   
+        
+    
+</body>
+</html>
